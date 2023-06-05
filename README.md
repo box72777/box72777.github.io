@@ -1,4 +1,5 @@
 # eid-web
 
 ## URL
-- https://x-stardust-x.github.io/
+- https://box72777.github.io/
+
