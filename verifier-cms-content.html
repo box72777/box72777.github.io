@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -41,7 +42,8 @@
           </a>
           <div class="dropdown-menu dropdown-menu-right">
             <a class="dropdown-item d-flex align-items-center" href="/backend/edit-info.html">
-              <img src="/static/imgs/personal_info.svg" alt="" width="30" height="30" class="d-inline-block align-middle">
+              <img src="/static/imgs/personal_info.svg" alt="" width="30" height="30"
+                class="d-inline-block align-middle">
               <span class="pl-2">基本資料</span>
             </a>
             <a class="dropdown-item d-flex align-items-center" href="/eid.html">
@@ -96,6 +98,9 @@
                   <!-- <img class="qr-code-width" src="/static/imgs/verifier-qr-code.png" alt=""> -->
                 </div>
               </div>
+              <button class="btn btn-primary" onclick="window.location.replace('verifier-cms-modify.html')">編輯</button>
+              <button class="btn btn-primary" onclick="window.location.replace('verifier-cms-list.html')"
+                onclick="delete_task()">刪除</button>
             </div>
           </div>
         </div>
@@ -103,5 +108,5 @@
     </section>
   </div>
 </body>
-</html>
 
+</html>
