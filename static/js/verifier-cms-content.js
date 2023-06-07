@@ -27,7 +27,6 @@ function delete_task() {
 
   $.ajax(settings).done(function (response) {
     console.log(response);
-    window.location.replace('/verifier-cms-list.html')
   });
 }
 
