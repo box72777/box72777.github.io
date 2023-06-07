@@ -13,7 +13,6 @@ const queryString = window.location.search;
 const urlParams = new URLSearchParams(queryString);
 var uuid = urlParams.get("task")
 
-
 let settings = {
   "url": `${HOST_URL_TPLANET_DAEMON}/tasks/get/${uuid}`,
   "method": "GET",
@@ -44,6 +43,11 @@ function renderTask(taskData){
 document.addEventListener('DOMContentLoaded', function() {
   const doneBtn = document.getElementById('doneBtn');
   doneBtn.addEventListener("click", function () {
+
+    const queryString = window.location.search;
+    const urlParams = new URLSearchParams(queryString);
+    var uuid = urlParams.get("task")
+
     var form = new FormData();
     var email = "yillkid@gmail.com";
     var type = "1";
