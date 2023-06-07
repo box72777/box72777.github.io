@@ -43,6 +43,7 @@ function renderTask(taskData){
 document.addEventListener('DOMContentLoaded', function() {
   const doneBtn = document.getElementById('doneBtn');
   doneBtn.addEventListener("click", function () {
+    delete_task()
     var form = new FormData();
     var email = "400@gmail.com";
     var type = "1";
@@ -51,7 +52,7 @@ document.addEventListener('DOMContentLoaded', function() {
     var token = document.getElementById("token").value; // "test001";
     var cover = getLocalStorage("task_cover");//`${TASK_COVER}`;
     
-    form.append("uuid", "99999999");
+    form.append("uuid", "28475992");
     form.append("tasks", "[{\"sdg\":1, \"des\":\"123\"}, {\"sdg\":2, \"des\":\"456\"}, {\"sdg\":3, \"des\":\"789\"}, {\"task_parent_id\":\"75324881\"}]");
     form.append("email", email);
     form.append("token", token);
