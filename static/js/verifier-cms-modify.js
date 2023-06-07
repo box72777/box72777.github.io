@@ -11,7 +11,7 @@ function set_page_info_verifier_cms_modify(){
 // Params
 const queryString = window.location.search;
 const urlParams = new URLSearchParams(queryString);
-var uuid = urlParams.get("task")
+var uuid = urlParams.get("task");
 
 let settings = {
   "url": `${HOST_URL_TPLANET_DAEMON}/tasks/get/${uuid}`,
@@ -43,6 +43,9 @@ function renderTask(taskData){
 document.addEventListener('DOMContentLoaded', function() {
   const doneBtn = document.getElementById('doneBtn');
   doneBtn.addEventListener("click", function () {
+    const queryString = window.location.search;
+    const urlParams = new URLSearchParams(queryString);
+    var uuid = urlParams.get("task");
     var form = new FormData();
     var email = "400@gmail.com";
     var type = "1";
