@@ -44,14 +44,14 @@ document.addEventListener('DOMContentLoaded', function() {
   const doneBtn = document.getElementById('doneBtn');
   doneBtn.addEventListener("click", function () {
     var form = new FormData();
-    /*var email = "400@gmail.com";
+    var email = "400@gmail.com";
     var type = "1";
     var name = document.getElementById("taskName").value; // "test001";
     var overview = document.getElementById("taskContent").value;// "overview123";
     var token = document.getElementById("token").value; // "test001";
     var cover = getLocalStorage("task_cover");//`${TASK_COVER}`;
     
-    form.append("uuid", uuid);
+    form.append("uuid", "99999999");
     form.append("tasks", "[{\"sdg\":1, \"des\":\"123\"}, {\"sdg\":2, \"des\":\"456\"}, {\"sdg\":3, \"des\":\"789\"}, {\"task_parent_id\":\"75324881\"}]");
     form.append("email", email);
     form.append("token", token);
@@ -59,16 +59,8 @@ document.addEventListener('DOMContentLoaded', function() {
     form.append("name", name);
     form.append("overview", overview);
     form.append("cover", cover);
-    form.append("gps_flag", "true");*/
-    form.append("uuid", "28475992");
-    form.append("tasks", "[{\"sdg\":1, \"des\":\"123\"}, {\"sdg\":2, \"des\":\"456\"}, {\"sdg\":3, \"des\":\"789\"}, {\"task_parent_id\":\"75324881\"}]");
-    form.append("email", "400@gmail.com");
-    form.append("token", "70");
-    form.append("type", "1");
-    form.append("name", "GPS-Test-C1");
-    form.append("overview", "overview123");
-    form.append("cover", "");
     form.append("gps_flag", "true");
+
     
     var settings = {
       "url": "https://beta-tplanet-backend.townway.com.tw/tasks/new",
