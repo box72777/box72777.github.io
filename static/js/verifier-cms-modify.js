@@ -34,7 +34,7 @@ function renderTask(taskData){
   const cover = document.getElementById('cover');
   const taskName = document.getElementById('taskName');
   const taskContent = document.getElementById('taskContent');
-  const coverContent = `<img class="img-fluid" src=${HOST_URL_TPLANET_DAEMON}${taskData.thumbnail} alt="">`
+  const coverContent = `<img id="task_cover" class="img-fluid" src=${HOST_URL_TPLANET_DAEMON}${taskData.thumbnail} alt="">`
   cover.innerHTML = coverContent;
   taskName.value = taskData.name;
   taskContent.textContent = taskData.overview;
