@@ -47,7 +47,7 @@ document.addEventListener('DOMContentLoaded', function() {
     var form = new FormData();
     var email = "yillkid@gmail.com";
     var type = "1";
-    var name = document.getElementById("taskname").value; // "test001";
+    var name = document.getElementById("taskName").value; // "test001";
     var overview = document.getElementById("taskContent").value;// "overview123";
     var token = document.getElementById("token").value; // "test001";
     var cover = getLocalStorage("task_cover");//`${TASK_COVER}`;
