@@ -43,7 +43,6 @@ function renderTask(taskData){
 document.addEventListener('DOMContentLoaded', function() {
   const doneBtn = document.getElementById('doneBtn');
   doneBtn.addEventListener("click", function () {
-    delete_task()
     var form = new FormData();
     var email = "400@gmail.com";
     var type = "1";
@@ -62,7 +61,7 @@ document.addEventListener('DOMContentLoaded', function() {
     form.append("cover", cover);
     form.append("gps_flag", "true");
 
-    
+    delete_task()
     var settings = {
       "url": "https://beta-tplanet-backend.townway.com.tw/tasks/new",
       "method": "POST",
