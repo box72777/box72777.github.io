@@ -51,7 +51,7 @@ document.addEventListener('DOMContentLoaded', function() {
     var token = document.getElementById("token").value; // "test001";
     var cover = getLocalStorage("task_cover");//`${TASK_COVER}`;
     
-    form.append("uuid", "28475992");
+    form.append("uuid", uuid);
     form.append("tasks", "[{\"sdg\":1, \"des\":\"123\"}, {\"sdg\":2, \"des\":\"456\"}, {\"sdg\":3, \"des\":\"789\"}, {\"task_parent_id\":\"75324881\"}]");
     form.append("email", email);
     form.append("token", token);
@@ -74,7 +74,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     $.ajax(settings).done(function (response) {
       console.log(response);
-
+      window.location.replace('/verifier-cms-list.html');
     });
   });
 });
