@@ -20,9 +20,8 @@
   <script src="/static/js/image.js"></script>
   <script src="/static/js/auth.js"></script>
   <script src="/static/js/navbar.js"></script>
-  <script src="/static/js/get-task.js"></script>
   <script src="/static/js/issues.js"></script>
-  <script src="/static/js/verifier-cms-content.js"></script>
+  <script src="/static/js/verifier-cms-modify.js"></script>
   <script src="/static/js/set-page-info.js"></script>
   <script src="/static/js/init.js"></script>
 </head>
@@ -68,8 +67,8 @@
         <div class="row justify-content-center mt-4 mb-4">
           <div class="col-10 mt-3">
             <div class="d-flex justify-content-center" id="cover">
-              <a href="#" onclick="setImgToLS('task_cover');" class="stretched-link"></a>
             </div>
+            <a href="#" onclick="setImgToLS('cover');" class="stretched-link btn btn-primary">更改圖片</a>
           </div>
           <div class="col-10 mt-3">
             <div>
@@ -99,9 +98,6 @@
                   <!-- <img class="qr-code-width" src="/static/imgs/verifier-qr-code.png" alt=""> -->
                 </div>
               </div>
-              <button class="btn btn-primary" onclick="window.location.replace('verifier-cms-modify.html')">編輯</button>
-              <button class="btn btn-primary" onclick="window.location.replace('verifier-cms-list.html')"
-                onclick="delete_task()">刪除</button>
             </div>
           </div>
         </div>
