@@ -41,11 +41,10 @@ function renderTask(taskData){
   document.getElementById('token').value = taskData.token;
 }
 
-const doneBtn = document.getElementById('doneBtn');
 document.addEventListener('DOMContentLoaded', function() {
+  const doneBtn = document.getElementById('doneBtn');
   doneBtn.addEventListener("click", function () {
     var form = new FormData();
-    var uuid = "00000001";
     var email = "yillkid@gmail.com";
     var type = "1";
     var name = document.getElementById("taskname").value; // "test001";
@@ -54,12 +53,14 @@ document.addEventListener('DOMContentLoaded', function() {
     var cover = getLocalStorage("task_cover");//`${TASK_COVER}`;
     
     form.append("uuid", uuid);
+    form.append("tasks", "[{\"sdg\":1, \"des\":\"123\"}, {\"sdg\":2, \"des\":\"456\"}, {\"sdg\":3, \"des\":\"789\"}, {\"task_parent_id\":\"75324881\"}]");
     form.append("email", email);
+    form.append("token", token);
     form.append("type", type);
     form.append("name", name);
-    form.append("token", token);
     form.append("overview", overview);
     form.append("cover", cover);
+    form.append("gps_flag", "true");
 
     
     var settings = {
